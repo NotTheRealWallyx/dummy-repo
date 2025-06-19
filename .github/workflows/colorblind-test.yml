@@ -12,9 +12,9 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Run colorblind snapshot analyzer
         uses: NotTheRealWallyx/colorblind-snapshot-analyzer@1.0.0
         with:
-          inputDir: public
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
