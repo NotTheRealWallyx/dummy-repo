@@ -15,6 +15,6 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Run colorblind snapshot analyzer
-        uses: NotTheRealWallyx/colorblind-snapshot-analyzer@1.0.0
+        uses: NotTheRealWallyx/colorblind-snapshot-analyzer@main
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
