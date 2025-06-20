@@ -19,6 +19,9 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Run colorblind snapshot analyzer
-        uses: NotTheRealWallyx/colorblind-snapshot-analyzer@main
+        uses: NotTheRealWallyx/colorblind-snapshot-analyzer@18-feature-swap-to-use-pdm-instead-of-requirementstxt
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
+        env:
+          GITHUB_REPOSITORY: ${{ github.repository }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
