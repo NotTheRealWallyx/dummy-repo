@@ -20,3 +20,5 @@ jobs:
 
       - name: Run colorblind snapshot analyzer
         uses: NotTheRealWallyx/LinkSentinel@1.0.0
+        with:
+          path: './docs'
